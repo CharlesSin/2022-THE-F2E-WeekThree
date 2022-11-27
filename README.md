@@ -14,9 +14,11 @@ The F2E 4th Scrum 新手村
 
 ## Use Technology & Library
 
+- SCSS
+- CSS Flexbox
+- RWD
 - Jquery UI
 - Jquery
-- CSS Flexbox
 - Droppable
 - Draggable
 
