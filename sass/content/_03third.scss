@@ -1,0 +1,277 @@
+.third {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: $bg-colour;
+
+  .black-coin-alot {
+    position: absolute;
+    top: 13%;
+    right: 7%;
+    transform: translate(-7%, -13%);
+    z-index: 99;
+    // width: 200px;
+    // height: 240px;
+
+    width: clamp(160px, 15.625vw, 300px);
+    height: clamp(192px, 18.75vw, 360px);
+  }
+
+  .container-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-5%, -50%);
+    color: $white;
+    font-weight: 400;
+    // font-size: 30px;
+    // line-height: 30px;
+
+    font-size: clamp(26px, 2.5vw, 48px);
+    line-height: clamp(26px, 2.5vw, 48px);
+  }
+
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .info-text {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      padding: 10px;
+      gap: 10px;
+      // width: 520px;
+      // height: 52px;
+      width: clamp(416px, 40.625vw, 780px);
+      height: clamp(42px, 4.0625vw, 78px);
+      /* Background-color */
+      background-color: $dark-red;
+      /* Border */
+      border: 6px solid $white;
+      border-radius: 1rem 1rem 0px 0px;
+
+      /* Text-color */
+      color: $white;
+      font-weight: 400;
+      // font-size: 20px;
+      // line-height: 40px;
+
+      font-size: clamp(1rem, 1.5625vw, 30px);
+      line-height: clamp(2rem, 3.125vw, 60px);
+    }
+
+    .card-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      border: 4px solid $white;
+      border-radius: 30px;
+      // width: 794px;
+      // height: 290px;
+      width: clamp(640px, 62.5vw, 1200px);
+      height: clamp(224px, 21.875vw, 420px);
+
+      .poker-card {
+        // width: 168px;
+        // height: 236px;
+        width: clamp(134px, 13.125vw, 252px);
+        height: clamp(192px, 18.75vw, 360px);
+        transform: scale(1);
+        cursor: grab;
+
+        &:hover {
+          transform: scale(1.1);
+          transition: transform 500ms ease-in-out;
+        }
+      }
+    }
+
+    .priority {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+
+      // width: 520px;
+      // height: 52px;
+      width: clamp(416px, 40.625vw, 780px);
+      height: clamp(42px, 4.0625vw, 78px);
+      margin: 0 auto;
+
+      /* Background-color */
+      background: $black;
+
+      /* Border */
+      border: 6px solid $white;
+      border-radius: 0px 0px 1rem 1rem;
+
+      /* Text-color */
+      color: $white;
+      font-weight: 400;
+      // font-size: 20px;
+      // line-height: 40px;
+
+      font-size: clamp(1rem, 1.5625vw, 30px);
+      line-height: clamp(2rem, 3.125vw, 60px);
+    }
+  }
+
+  .dice-2 {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    // width: 100px;
+    // height: 100px;
+
+    width: clamp(80px, 7.8125vw, 150px);
+    height: clamp(80px, 7.8125vw, 150px);
+  }
+
+  .btn {
+    position: absolute;
+    width: 183px;
+    height: 88px;
+    bottom: 48px;
+    right: 44px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .third {
+    .black-coin-alot {
+      top: 40%;
+      right: 7%;
+      transform: translate(-7%, -40%);
+
+      width: clamp(120px, 15.625vw, 160px);
+      height: clamp(144px, 18.75vw, 192px);
+    }
+
+    .container-text {
+      top: 50%;
+      left: 3%;
+      transform: translate(-3%, -50%);
+
+      font-size: clamp(20px, 2.5vw, 26px);
+      line-height: clamp(20px, 2.5vw, 26px);
+    }
+
+    .container {
+      .info-text {
+        width: clamp(312px, 40.625vw, 416px);
+        height: clamp(32px, 4.0625vw, 42px);
+        font-size: 1rem;
+        line-height: 1rem;
+        border-width: 4px;
+      }
+
+      .card-content {
+        border-radius: 20px;
+        width: clamp(480px, 62.5vw, 640px);
+        height: clamp(168px, 21.875vw, 224px);
+        border-width: 2px;
+
+        .poker-card {
+          width: clamp(100px, 13.125vw, 134px);
+          height: clamp(144px, 18.75vw, 192px);
+        }
+      }
+
+      .priority {
+        width: clamp(312px, 40.625vw, 416px);
+        height: clamp(32px, 4.0625vw, 42px);
+        font-size: 1rem;
+        line-height: 1rem;
+        border-width: 4px;
+      }
+    }
+
+    .dice-2 {
+      position: absolute;
+      bottom: 30%;
+      left: 10%;
+      transform: translate(-10%, -30%);
+
+      width: clamp(60px, 7.8125vw, 80px);
+      height: clamp(60px, 7.8125vw, 80px);
+    }
+
+    .btn {
+      width: 120px;
+      height: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .third {
+    .black-coin-alot {
+      top: 41%;
+      right: 1%;
+      transform: translate(-1%, -41%);
+
+      width: 80px;
+      height: 90px;
+    }
+
+    .container-text {
+      top: 50%;
+      left: 3%;
+      transform: translate(-3%, -50%);
+      font-size: 12px;
+      line-height: 12px;
+    }
+
+    .container {
+      left: 60%;
+      transform: translate(-60%, -50%);
+
+      .info-text {
+        width: 200px;
+        height: 1.5rem;
+        font-size: 12px;
+        line-height: 12px;
+        border-width: 2px;
+      }
+
+      .card-content {
+        border-radius: 1rem;
+        width: clamp(234px, 62.5vw, 480px);
+        height: clamp(82px, 21.875vw, 168px);
+        border-width: 1px;
+        gap: 6px;
+
+        .poker-card {
+          width: clamp(50px, 13.125vw, 100px);
+          height: clamp(70px, 18.75vw, 144px);
+        }
+      }
+
+      .priority {
+        width: 200px;
+        height: 1.5rem;
+        font-size: 12px;
+        line-height: 12px;
+        border-width: 2px;
+      }
+    }
+
+    .dice-2 {
+      position: absolute;
+      bottom: 30%;
+      left: 10%;
+      transform: translate(-10%, -30%);
+
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
