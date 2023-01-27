@@ -5,5 +5,6 @@ Date: 27/01/2023
 4. adding sitemap.xml [DONE]
 5. adding robots.txt [DONE]
 6. adding browser fingerprint for tracking who view landing page [DONE]
-7. Update correct HTML lang to zh-Hant-TW.
-8. Replace fifth page button font size.
+7. Update correct HTML lang to zh-Hant-TW. [DONE]
+8. Replace fifth page button font size. [DONE]
+9. Adding loading="lazy" for all img tag. [DONE]
