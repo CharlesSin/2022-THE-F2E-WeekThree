@@ -207,3 +207,350 @@
     right: 44px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .seventh {
+    position: relative;
+    padding: 20px;
+    overflow: scroll;
+
+    .chat {
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-top: 1rem;
+        margin-left: 65px;
+
+        .chat-message {
+          display: flex;
+          flex-direction: column;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          padding: 0.75rem;
+        }
+      }
+
+      &:nth-child(3) {
+        .chat-message {
+          display: flex;
+          flex-direction: column;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          padding: 0.75rem;
+        }
+      }
+
+      .left-avatar {
+        margin-right: 1rem;
+
+        img {
+          width: 48px;
+          height: 48px;
+        }
+
+        span {
+          padding: 0.25rem;
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+
+      .chat-message {
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+
+        img {
+          width: 100px;
+          height: 30px;
+          margin-left: auto;
+          margin-right: 1.5rem;
+        }
+      }
+    }
+
+    .container {
+      margin: 80px 0 0;
+      width: 712px;
+      height: 320px;
+    }
+
+    .small-box {
+      padding: 1rem;
+      gap: 10px;
+      // width: 248px;
+      // height: 64px;
+      // width: 19.375vw;
+      width: 24vw;
+      height: 5vw;
+
+      &.red {
+        top: 20%;
+        left: 15%;
+        transform: translate(-20%, -20%);
+      }
+
+      &.yellow {
+        position: absolute;
+        top: 20%;
+        right: 34%;
+        transform: translate(-20%, -20%);
+        transform: scale(1);
+      }
+
+      &.green {
+        position: absolute;
+        width: 30vw;
+        top: 20%;
+        right: 2%;
+        transform: translate(-2%, -20%);
+        transform: scale(1);
+      }
+    }
+
+    .small-box-dash {
+      // width: 310px;
+      // height: 80px;
+
+      width: 248px;
+      height: 64px;
+
+      &.border-yellow {
+        position: absolute;
+        top: 34%;
+        left: 36%;
+        bottom: 0;
+        transform: translate(-36%, -34%);
+      }
+
+      &.border-green {
+        position: absolute;
+        top: 34%;
+        left: 74%;
+        bottom: 0;
+        transform: translate(-74%, -34%);
+      }
+    }
+
+    .btn {
+      position: unset;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 20px 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .seventh {
+    .chat {
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-top: 1rem;
+        margin-left: 65px;
+
+        .chat-message {
+          display: flex;
+          flex-direction: column;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          padding: 0.75rem;
+        }
+      }
+
+      &:nth-child(3) {
+        .chat-message {
+          display: flex;
+          flex-direction: column;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          padding: 0.75rem;
+        }
+      }
+
+      .left-avatar {
+        margin-right: 1rem;
+
+        img {
+          width: 48px;
+          height: 48px;
+        }
+
+        span {
+          padding: 0.25rem;
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+
+      .chat-message {
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+
+        img {
+          width: 100px;
+          height: 30px;
+          margin-left: auto;
+          margin-right: 1.5rem;
+        }
+      }
+    }
+
+    .container {
+      margin: 80px 0 0;
+      width: 100%;
+      height: auto;
+    }
+
+    .small-box {
+      padding: 0.5rem;
+      gap: 10px;
+      width: 30vw;
+      height: 8vw;
+
+      &.red {
+        top: 28%;
+        left: 20%;
+        transform: translate(-20%, -28%);
+      }
+
+      &.yellow {
+        position: absolute;
+        top: 20%;
+        right: 34%;
+        transform: translate(-20%, -20%);
+        transform: scale(1);
+      }
+
+      &.green {
+        position: absolute;
+        width: 30vw;
+        top: 20%;
+        right: 2%;
+        transform: translate(-2%, -20%);
+        transform: scale(1);
+      }
+    }
+
+    .small-box-dash {
+      width: 180px;
+      height: 60px;
+
+      &.border-yellow {
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, -48%);
+      }
+
+      &.border-green {
+        position: absolute;
+        top: 48%;
+        left: 86%;
+        bottom: 0;
+        transform: translate(-86%, -48%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .seventh {
+    .chat {
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-top: 0.5rem;
+        margin-left: 65px;
+
+        .chat-message {
+          display: flex;
+          flex-direction: column;
+          font-size: 14px;
+          line-height: 18px;
+          padding: 0.5rem;
+        }
+      }
+
+      &:nth-child(3) {
+        .chat-message {
+          display: flex;
+          flex-direction: column;
+          font-size: 14px;
+          line-height: 18px;
+          padding: 0.5rem;
+        }
+      }
+
+      .chat-message {
+        padding: 0.5rem;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+
+    .container {
+      margin: 80px 0 0;
+      width: 100%;
+      height: auto;
+    }
+
+    .small-box {
+      padding: 0.5rem;
+      width: 20vw;
+      height: auto;
+
+      &-text {
+        font-size: 12px;
+        line-height: 12px;
+      }
+
+      &.red {
+        top: 28%;
+        left: 20%;
+        transform: translate(-20%, -28%);
+      }
+
+      &.yellow {
+        position: absolute;
+        top: 20%;
+        right: 34%;
+        transform: translate(-20%, -20%);
+        transform: scale(1);
+      }
+
+      &.green {
+        position: absolute;
+        width: 30vw;
+        top: 20%;
+        right: 2%;
+        transform: translate(-2%, -20%);
+        transform: scale(1);
+      }
+    }
+
+    .small-box-dash {
+      width: 100px;
+      height: 50px;
+
+      &.border-yellow {
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, -48%);
+      }
+
+      &.border-green {
+        position: absolute;
+        top: 38%;
+        left: 86%;
+        bottom: 0;
+        transform: translate(-86%, -48%);
+      }
+    }
+  }
+}

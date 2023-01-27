@@ -118,7 +118,7 @@
         font-weight: 400;
         font-size: 30px;
         line-height: 30px;
-        color: #ffffff;
+        color: $white;
         margin-bottom: 30px;
       }
 
@@ -209,5 +209,219 @@
     position: absolute;
     bottom: 48px;
     right: 44px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .eighth {
+    padding: 20px;
+
+    .chat {
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-top: 1rem;
+        margin-left: 65px;
+
+        .chat-message {
+          display: flex;
+          flex-direction: column;
+          font-size: 1.5rem;
+          line-height: 2rem;
+          padding: 0.75rem;
+        }
+      }
+
+      &:nth-child(3) {
+        .chat-message {
+          display: flex;
+          flex-direction: column;
+          font-size: 1.5rem;
+          line-height: 2rem;
+          padding: 0.75rem;
+        }
+      }
+
+      .left-avatar {
+        margin-right: 1rem;
+
+        img {
+          width: 48px;
+          height: 48px;
+        }
+
+        span {
+          padding: 0.25rem;
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+
+      .chat-message {
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+
+        img {
+          width: 100px;
+          height: 30px;
+          margin-left: auto;
+          margin-right: 1.5rem;
+        }
+      }
+    }
+
+    .card-contnet {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 8px;
+      margin-top: 3rem;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &-header {
+          font-size: 1.5rem;
+          line-height: 2rem;
+          margin-bottom: 1rem;
+        }
+
+        &-body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+        }
+      }
+    }
+
+    .btn {
+      position: unset;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 20px 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .eighth {
+    .chat {
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-top: 1rem;
+        margin-left: 65px;
+
+        .chat-message {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          padding: 0.5rem;
+        }
+      }
+
+      &:nth-child(3) {
+        .chat-message {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          padding: 0.5rem;
+        }
+      }
+
+      .left-avatar {
+        margin-right: 1rem;
+
+        span {
+          padding: 0.25rem;
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+
+      .chat-message {
+        padding: 0.5rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+
+    .card-contnet {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 0.75rem;
+      margin-top: 2rem;
+
+      .card {
+        &-header {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        &-body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.25rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .eighth {
+    overflow: scroll;
+    padding: 1rem;
+
+    .chat {
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-top: 0.5rem;
+
+        .chat-message {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+
+      &:nth-child(3) {
+        .chat-message {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+
+      .chat-message {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    .card-contnet {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 0.5rem;
+      margin-top: 1rem;
+
+      .card {
+        &-header {
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 0.25rem;
+        }
+
+        &-body {
+          gap: 0.25rem;
+        }
+      }
+    }
+
+    .btn {
+      min-width: fit-content;
+    }
   }
 }
