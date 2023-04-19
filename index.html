@@ -1,460 +1,434 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="environment" content="production" />
+    <title>Scrum 新手村</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="apple-touch-icon" href="./images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="167x167" href="./images/favicon.ico" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="environment" content="production">
-    <title> Scrum 新手村 </title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-    <link rel="apple-touch-icon" href="./images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="167x167" href="./images/favicon.ico">
+    <link rel="canonical" href="https://2022-the-f2e-week3.netlify.app" />
+    <link rel="alternate" href="https://2022-the-f2e-week3.netlify.app" hreflang="zh-tw" />
 
-    <link rel="canonical" href="https://2022-the-f2e-3.netlify.app" />
-    <link rel="alternate" href="https://2022-the-f2e-3.netlify.app" hreflang="zh-tw" />
-
-    <meta name="description" content="Charles Sin 參加 2022 六角學院作品：Scrum 新手村">
-    <meta property="og:title" content="The F2E 2022 前端 ｜ Scrum 新手村">
-    <meta property="og:description" content="Charles Sin 參加 2022 六角學院作品：Scrum 新手村。自我挑戰的地方">
-    <meta property="og:image"
-        content="https://github.com/CharlesSin/2022-THE-F2E-WeekThree/blob/master/images/cover.jpg">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://2022-the-f2e-3.netlify.app" />
-    <meta property="og:site_name" content="Charles Sin 參加 2022 六角學院作品：Scrum 新手村" />
-    <meta name="keywords" content="charles The F2E 2022 Frontend Entries, Charles The F2E 2022 前端 ｜ Scrum 新手村 charles-thef2e-project" />
+    <meta name="title" content="The F2E 2022 前端 Scrum 新手村" />
+    <meta name="description" content="Charles Sin 參加 2022 六角學院作品: Scrum 新手村" />
+    <meta name="keywords" content="charles The F2E 2022 Frontend Entries, Charles The F2E 2022 前端 Scrum 新手村 charles-thef2e-project" />
+    <meta property="og:title" content="The F2E 2022 前端 Scrum 新手村" />
+    <meta property="og:description" content="Charles Sin 參加 2022 六角學院作品: Scrum 新手村。自我挑戰的地方" />
+    <meta property="og:image" content="https://github.com/CharlesSin/2022-THE-F2E-WeekThree/blob/master/images/cover.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://2022-the-f2e-week3.netlify.app" />
+    <meta property="og:site_name" content="Charles Sin 參加 2022 六角學院作品: Scrum 新手村" />
+    <meta property="og:keywords" content="charles The F2E 2022 Frontend Entries, Charles The F2E 2022 前端 Scrum 新手村 charles-thef2e-project" />
 
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="The F2E 2022 前端 ｜ Scrum 新手村" />
-    <meta name="twitter:description" content="Charles Sin 參加 2022 六角學院作品：Scrum 新手村。自我挑戰的地方" />
-    <meta name="twitter:image"
-        content="https://github.com/CharlesSin/2022-THE-F2E-WeekThree/blob/master/images/cover.jpg" />
+    <meta name="twitter:title" content="The F2E 2022 前端 Scrum 新手村" />
+    <meta name="twitter:description" content="Charles Sin 參加 2022 六角學院作品: Scrum 新手村。自我挑戰的地方" />
+    <meta name="twitter:image" content="https://github.com/CharlesSin/2022-THE-F2E-WeekThree/blob/master/images/cover.jpg" />
 
     <meta name="google-site-verification" content="IqgaVQ4-W_ED-gWCuPP1fG5kL8uUmNx-eWj5iiyZ_Dw" />
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <section class="hero active" id="hero">
-        <div class="logo">
-            <img src="./images/week3-logo.svg" alt="logo" title="logo" loading="lazy">
-        </div>
-        <h2>
-            <p>哈囉，歡迎加入六角資訊，</p>
-            <p>在正式加入專案開發之前，</p>
-            <p>需要請你先了解 Scrum 的流程與精神！</p>
-            <p>請接受挑戰任務，成功通過 Scrum 新手村的挑戰任務吧！</p>
-        </h2>
-        <div class="black-coin-1">
-            <img src="./images/black-coin-1.svg" alt="black coin" loading="lazy">
-        </div>
-        <div class="red-coin-1">
-            <img src="./images/red-coin-1.svg" alt="red coin" loading="lazy">
-        </div>
-        <div class="red-coin-2">
-            <img src="./images/red-coin-2.svg" alt="red coin" loading="lazy">
-        </div>
-        <div class="dice-1">
-            <img src="./images/dice-1.svg" alt="dice" loading="lazy">
-        </div>
-        <div class="poker-card-1">
-            <img src="./images/poker-card-1.svg" alt="poker card" loading="lazy">
-        </div>
-        <div class="poker-card-2">
-            <img src="./images/poker-card-2.svg" alt="poker card" loading="lazy">
-        </div>
-        <button class="btn btn-dark" onclick="nextStep('hero', 'second')">開始挑戰</button>
+      <div class="logo">
+        <img src="./images/week3-logo.svg" alt="logo" title="logo" loading="lazy" />
+      </div>
+      <h2>
+        <p>哈囉，歡迎加入六角資訊，</p>
+        <p>在正式加入專案開發之前，</p>
+        <p>需要請你先了解 Scrum 的流程與精神！</p>
+        <p>請接受挑戰任務，成功通過 Scrum 新手村的挑戰任務吧！</p>
+      </h2>
+      <div class="black-coin-1">
+        <img src="./images/black-coin-1.svg" alt="black coin" loading="lazy" />
+      </div>
+      <div class="red-coin-1">
+        <img src="./images/red-coin-1.svg" alt="red coin" loading="lazy" />
+      </div>
+      <div class="red-coin-2">
+        <img src="./images/red-coin-2.svg" alt="red coin" loading="lazy" />
+      </div>
+      <div class="dice-1">
+        <img src="./images/dice-1.svg" alt="dice" loading="lazy" />
+      </div>
+      <div class="poker-card-1">
+        <img src="./images/poker-card-1.svg" alt="poker card" loading="lazy" />
+      </div>
+      <div class="poker-card-2">
+        <img src="./images/poker-card-2.svg" alt="poker card" loading="lazy" />
+      </div>
+      <button class="btn btn-dark" onclick="nextStep('hero', 'second')">開始挑戰</button>
     </section>
     <section class="second" id="second">
-        <ul>
-            <li>
-                <div class="left-avatar">
-                    <img src="./images/tina-avatar.png" alt="tina avatar" loading="lazy">
-                    <span>Tina</span>
-                </div>
-                <p class="chat-message">
-                    我是資訊，開發A組的PO，Tina。PO也就是產品負責人(Product Owner)。產品負責人會負責評估產品待辦清單的價值與重要性，依序
-                    <span class="highlight"> 排列要執行的優先順序 </span>
-                    ，對齊產品目標。最後排出產品待辦清單(Product Backlog)唷！剛好我最近手邊有一個
-                    <span class="highlight">『人才招募系統』</span>
-                    的案子，我才剛列出了
-                    <span class="highlight">『產品需求清單』</span>。
-                    既然你都來了，來試試看
-                    <span class="highlight">調整產品優先度，排出產品待辦清單吧</span>！
-                </p>
-            </li>
-            <li>
-                <p class="chat-message">
-                    我們公司也推薦使用Jira做任務的管理呢！
-                    <img src="./images/atlassian-jira-logo.png" alt="atlassian jira software" loading="lazy">
-                </p>
-            </li>
-        </ul>
-        <button class="btn btn-dark" onclick="nextStep('second', 'third')">接受挑戰</button>
+      <ul>
+        <li>
+          <div class="left-avatar">
+            <img src="./images/tina-avatar.png" alt="tina avatar" loading="lazy" />
+            <span>Tina</span>
+          </div>
+          <p class="chat-message">
+            我是資訊，開發A組的PO，Tina。PO也就是產品負責人(Product Owner)。產品負責人會負責評估產品待辦清單的價值與重要性，依序
+            <span class="highlight"> 排列要執行的優先順序 </span>
+            ，對齊產品目標。最後排出產品待辦清單(Product Backlog)唷！剛好我最近手邊有一個
+            <span class="highlight">『人才招募系統』</span>
+            的案子，我才剛列出了
+            <span class="highlight">『產品需求清單』</span>。 既然你都來了，來試試看 <span class="highlight">調整產品優先度，排出產品待辦清單吧</span>！
+          </p>
+        </li>
+        <li>
+          <p class="chat-message">
+            我們公司也推薦使用Jira做任務的管理呢！
+            <img src="./images/atlassian-jira-logo.png" alt="atlassian jira software" loading="lazy" />
+          </p>
+        </li>
+      </ul>
+      <button class="btn btn-dark" onclick="nextStep('second', 'third')">接受挑戰</button>
     </section>
     <section class="third" id="third">
-        <div class="black-coin-alot">
-            <img src="./images/black-coin-alot-1.png" alt="alot black coin" loading="lazy">
+      <div class="black-coin-alot">
+        <img src="./images/black-coin-alot-1.png" alt="alot black coin" loading="lazy" />
+      </div>
+      <h3 class="container-text">產品待辦清單</h3>
+      <div class="container">
+        <span class="info-text">用 <b>拖移</b> 的方式調整優先順序</span>
+        <ul class="card-content connected-sortable droppable" id="poker-card-dropable">
+          <li class="drag poker-card draggable-item" data-index="3">
+            <img src="./images/card-04.png" alt="poker card" loading="lazy" />
+          </li>
+          <li class="drag poker-card draggable-item" data-index="2">
+            <img src="./images/card-02.png" alt="poker card" loading="lazy" />
+          </li>
+          <li class="drag poker-card draggable-item" data-index="1">
+            <img src="./images/card-01.png" alt="poker card" loading="lazy" />
+          </li>
+          <li class="drag poker-card draggable-item" data-index="4">
+            <img src="./images/card-03.png" alt="poker card" loading="lazy" />
+          </li>
+        </ul>
+        <div class="priority">
+          <span>高 ←</span>
+          <span>優先權</span>
+          <span>→ 低</span>
         </div>
-        <h3 class="container-text">產品待辦清單</h3>
-        <div class="container">
-            <span class="info-text">用 <b>拖移</b> 的方式調整優先順序</span>
-            <ul class="card-content connected-sortable droppable" id="poker-card-dropable">
-                <li class="drag poker-card draggable-item" data-index="3">
-                    <img src="./images/card-04.png" alt="poker card" loading="lazy">
-                </li>
-                <li class="drag poker-card draggable-item" data-index="2">
-                    <img src="./images/card-02.png" alt="poker card" loading="lazy">
-                </li>
-                <li class="drag poker-card draggable-item" data-index="1">
-                    <img src="./images/card-01.png" alt="poker card" loading="lazy">
-                </li>
-                <li class="drag poker-card draggable-item" data-index="4">
-                    <img src="./images/card-03.png" alt="poker card" loading="lazy">
-                </li>
-
-            </ul>
-            <div class="priority">
-                <span>高 ←</span>
-                <span>優先權</span>
-                <span>→ 低</span>
-            </div>
-        </div>
-        <div class="dice-2">
-            <img src="./images/dice-3.png" alt="dice" loading="lazy">
-        </div>
-        <button class="btn btn-dark" onclick="thirdSectionChecking()">完成</button>
+      </div>
+      <div class="dice-2">
+        <img src="./images/dice-3.png" alt="dice" loading="lazy" />
+      </div>
+      <button class="btn btn-dark" onclick="thirdSectionChecking()">完成</button>
     </section>
     <section class="fourth" id="fourth">
-        <ul>
-            <li>
-                <div class="left-avatar">
-                    <img src="./images/tina-avatar.png" alt="tina avatar" loading="lazy">
-                    <span>Tina</span>
-                </div>
-                <span class="chat-message">
-                    產品待辦清單好了之後，我們來召集ScrumMstr開發團隊共同召開短衝規劃會議 (Sprint Planning)。
-                    短衝即是一個迭代，具有
-                    <span class="highlight"> 固定時間限制 </span>，
-                    我們會在這個會議中，決定要完哪些工作事項來達到商業需求，
-                    <span class="highlight"> 列出短衝待辦清單(Sprint Backlog)</span>
-                    ，並由開發團隊在接下來的產品開發期裡執行。
-                </span>
-            </li>
-            <li>
-                <div class="left-avatar">
-                    <img src="./images/tim-avatar.png" alt="tim avatar" loading="lazy">
-                    <span>Tim</span>
-                </div>
-                <span class="chat-message">
-                    嗨嗨 你是新來的前端吧！我是這次的 Scrum Master 小捷，我的工作主要是促成開發團隊成員協作、引導團隊進行自省會議，提升團隊成員對 Scrum 瞭解。這兩位是 Jason和
-                    Allen，是我們開發團為的成員唷～目前我們團隊一次Sprint是兩的時間，依照我的觀察，目前我們團隊一次 Sprint 週期是兩週的時間，依照我的觀察，
-                    <span class="highlight">目前團隊可以負擔的點數 (Sprint Point) 大約是 20 點。</span>
-                </span>
-            </li>
-            <li>
-                <div class="left-avatar">
-                    <img src="./images/jason-avatar.png" alt="jason avatar" loading="lazy">
-                    <span>Jason</span>
-                </div>
-                <span class="chat-message">
-                    新來的，你應該不知道點數是什麼意思吧！哈哈~我來跟你介紹一下吧~
-                    <span class="highlight"> Sprint Point 目的是為了衡量速度，是用大概花費的時間預估出的相對點數</span>。
-                </span>
-            </li>
-            <li>
-                <div class="left-avatar">
-                    <img src="./images/allen-avatar.png" alt="allen avatar" loading="lazy">
-                    <span>Allen</span>
-                </div>
-                <span class="chat-message">
-                    沒錯，如果小斯哥說的，我這邊已經把剛剛討論好的
-                    <span class="highlight"> 點數 </span>
-                    標上去囉～ 你來練習
-                    <span class="highlight">把任務排到短衝待辦清單吧</span>！
-                </span>
-            </li>
-        </ul>
-        <button class="btn btn-dark" onclick="nextStep('fourth', 'fifth')">接受挑戰</button>
+      <ul>
+        <li>
+          <div class="left-avatar">
+            <img src="./images/tina-avatar.png" alt="tina avatar" loading="lazy" />
+            <span>Tina</span>
+          </div>
+          <span class="chat-message">
+            產品待辦清單好了之後，我們來召集ScrumMstr開發團隊共同召開短衝規劃會議 (Sprint Planning)。 短衝即是一個迭代，具有
+            <span class="highlight"> 固定時間限制 </span>， 我們會在這個會議中，決定要完哪些工作事項來達到商業需求，
+            <span class="highlight"> 列出短衝待辦清單(Sprint Backlog)</span>
+            ，並由開發團隊在接下來的產品開發期裡執行。
+          </span>
+        </li>
+        <li>
+          <div class="left-avatar">
+            <img src="./images/tim-avatar.png" alt="tim avatar" loading="lazy" />
+            <span>Tim</span>
+          </div>
+          <span class="chat-message">
+            嗨嗨 你是新來的前端吧！我是這次的 Scrum Master 小捷，我的工作主要是促成開發團隊成員協作、引導團隊進行自省會議，提升團隊成員對 Scrum 瞭解。這兩位是 Jason和
+            Allen，是我們開發團為的成員唷～目前我們團隊一次Sprint是兩的時間，依照我的觀察，目前我們團隊一次 Sprint 週期是兩週的時間，依照我的觀察，
+            <span class="highlight">目前團隊可以負擔的點數 (Sprint Point) 大約是 20 點。</span>
+          </span>
+        </li>
+        <li>
+          <div class="left-avatar">
+            <img src="./images/jason-avatar.png" alt="jason avatar" loading="lazy" />
+            <span>Jason</span>
+          </div>
+          <span class="chat-message">
+            新來的，你應該不知道點數是什麼意思吧！哈哈~我來跟你介紹一下吧~
+            <span class="highlight"> Sprint Point 目的是為了衡量速度，是用大概花費的時間預估出的相對點數</span>。
+          </span>
+        </li>
+        <li>
+          <div class="left-avatar">
+            <img src="./images/allen-avatar.png" alt="allen avatar" loading="lazy" />
+            <span>Allen</span>
+          </div>
+          <span class="chat-message">
+            沒錯，如果小斯哥說的，我這邊已經把剛剛討論好的
+            <span class="highlight"> 點數 </span>
+            標上去囉～ 你來練習
+            <span class="highlight">把任務排到短衝待辦清單吧</span>！
+          </span>
+        </li>
+      </ul>
+      <button class="btn btn-dark" onclick="nextStep('fourth', 'fifth')">接受挑戰</button>
     </section>
     <section class="fifth" id="fifth">
-        <div class="coin-alot">
-            <img src="./images/yellow-red-alot.png" alt="alot yellow red coin" loading="lazy" />
-        </div>
-        <h3 class="container-text"> 產品待辦清單 </h3>
-        <ul class="container">
-            <li class="poker-card fifth-drag-area">
-                <img class="fifth-box" src="./images/fifth-poker-card-01.svg" alt="poker card" data-value="8"
-                    loading="lazy" />
-            </li>
-            <li class="poker-card fifth-drag-area">
-                <img class="fifth-box" src="./images/fifth-poker-card-02.svg" alt="poker card" data-value="5"
-                    loading="lazy" />
-            </li>
-            <li class="poker-card fifth-drag-area">
-                <img class="fifth-box" src="./images/fifth-poker-card-03.svg" alt="poker card" data-value="8"
-                    loading="lazy" />
-            </li>
-            <li class="poker-card fifth-drag-area">
-                <img class="fifth-box" src="./images/fifth-poker-card-04.svg" alt="poker card" data-value="13"
-                    loading="lazy" />
-            </li>
-        </ul>
+      <div class="coin-alot">
+        <img src="./images/yellow-red-alot.png" alt="alot yellow red coin" loading="lazy" />
+      </div>
+      <h3 class="container-text">產品待辦清單</h3>
+      <ul class="container">
+        <li class="poker-card fifth-drag-area">
+          <img class="fifth-box" src="./images/fifth-poker-card-01.svg" alt="poker card" data-value="8" loading="lazy" />
+        </li>
+        <li class="poker-card fifth-drag-area">
+          <img class="fifth-box" src="./images/fifth-poker-card-02.svg" alt="poker card" data-value="5" loading="lazy" />
+        </li>
+        <li class="poker-card fifth-drag-area">
+          <img class="fifth-box" src="./images/fifth-poker-card-03.svg" alt="poker card" data-value="8" loading="lazy" />
+        </li>
+        <li class="poker-card fifth-drag-area">
+          <img class="fifth-box" src="./images/fifth-poker-card-04.svg" alt="poker card" data-value="13" loading="lazy" />
+        </li>
+      </ul>
 
-        <h3 class="content-text"> 開發 A 組 <br> 短衝待辦清單 </h3>
-        <ul class="content">
-            <li class="poker-card-cover fifth-drag-area"></li>
-            <li class="poker-card-cover fifth-drag-area"></li>
-            <li class="poker-card-cover fifth-drag-area"></li>
-            <li class="poker-card-cover fifth-drag-area"></li>
-        </ul>
-        <h3 class="total-text"> <span id="job-size">0</span> / 20 </h3>
+      <h3 class="content-text">
+        開發 A 組 <br />
+        短衝待辦清單
+      </h3>
+      <ul class="content">
+        <li class="poker-card-cover fifth-drag-area"></li>
+        <li class="poker-card-cover fifth-drag-area"></li>
+        <li class="poker-card-cover fifth-drag-area"></li>
+        <li class="poker-card-cover fifth-drag-area"></li>
+      </ul>
+      <h3 class="total-text"><span id="job-size">0</span> / 20</h3>
 
-        <button class="btn btn-dark" onclick="fifthSectionChecking()">
-            準備好了！<br>
-            開始 Sprint
-        </button>
+      <button class="btn btn-dark" onclick="fifthSectionChecking()">
+        準備好了！<br />
+        開始 Sprint
+      </button>
     </section>
     <section class="sixth" id="sixth">
-        <ul>
-            <li class="chat">
-                <div class="left-avatar">
-                    <img src="./images/jason-avatar.png" alt="tina avatar" loading="lazy" />
-                    <span>Jason</span>
-                </div>
-                <p class="chat-message">
-                    等等等等等，你都還不知道什麼是Sprint吧！讓我先為你介紹一下~仔細聽好，等等會考考你！
-                </p>
-            </li>
-            <li class="chat">
-                <p class="chat-message">
-                    Sprint是一個短衝，
-                    開發團隊會在這期間執行開發。
-                    在這段期間內，
-                    開發團隊舉辦每日站立會議(Daily Scrum)，
-                    追蹤成員間的工作狀況，
-                    除了
-                    <span class="highlight"> 每日站立會議 </span> ，
-                    在Sprint的結束也會包含
-                    <span class="highlight"> 短衝檢視會議(Sprint Review)</span>
-                    、<span class="highlight">短衝自省會議(Sprint Retrospective) </span>。
-                </p>
-            </li>
-            <li class="chat">
-                <span class="chat-message">
-                    推薦工具：
-                    <img src="./images/confluence-logo.png" alt="confluence logo" loading="lazy" />
-                </span>
-            </li>
-        </ul>
-        <ul class="card-content">
-            <li class="card">
-                <div class="card-header red">
-                    <span class="header-text"> 每日站立會議(Daily Scrum) </span>
-                </div>
-                <div class="card-body">
-                    <p>每天都要進行的會議，以15分鐘為限制</p>
-                    <p class="dot">昨天為團隊的短衝目標(Sprint Goal)做了那些進度</p>
-                    <p class="dot">今天我會如何準備來幫助團隊達到短衝目標</p>
-                    <p class="dot">過程中有遇到什麼問題、難題</p>
-                    <p>透過團隊分享，追蹤大家的工作狀況。</p>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-header yellow">
-                    <span class="header-text"> 短衝檢視會議(Sprint Review) </span>
-                </div>
-                <div class="card-body text-center">
-                    用來檢視該次短衝增量的成<br>
-                    果，以蒐集相關的回饋數據<br>
-                    或意見。
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-header green">
-                    <span class="header-text"> 短衝自省會議(Sprint Retrospective) </span>
-                </div>
-                <div class="card-body text-center">
-                    <p>團隊在自省會議裡, 會共同回顧該短衝歷程發生的事情</p>
-                    <p class="dot">好的地方</p>
-                    <p class="dot">可以改進的地方</p>
-                    <p class="dot">如何維持我們已有的成功經驗</p>
-                    <p>優化工作流程、讓團隊有變得更好的機會。</p>
-                </div>
-            </li>
-        </ul>
-        <button class="btn btn-dark" onclick="nextStep('sixth', 'seventh')">
-            我了解了
-        </button>
+      <ul>
+        <li class="chat">
+          <div class="left-avatar">
+            <img src="./images/jason-avatar.png" alt="tina avatar" loading="lazy" />
+            <span>Jason</span>
+          </div>
+          <p class="chat-message">等等等等等，你都還不知道什麼是Sprint吧！讓我先為你介紹一下~仔細聽好，等等會考考你！</p>
+        </li>
+        <li class="chat">
+          <p class="chat-message">
+            Sprint是一個短衝， 開發團隊會在這期間執行開發。 在這段期間內， 開發團隊舉辦每日站立會議(Daily Scrum)， 追蹤成員間的工作狀況， 除了
+            <span class="highlight"> 每日站立會議 </span> ， 在Sprint的結束也會包含
+            <span class="highlight"> 短衝檢視會議(Sprint Review)</span>
+            、<span class="highlight">短衝自省會議(Sprint Retrospective) </span>。
+          </p>
+        </li>
+        <li class="chat">
+          <span class="chat-message">
+            推薦工具：
+            <img src="./images/confluence-logo.png" alt="confluence logo" loading="lazy" />
+          </span>
+        </li>
+      </ul>
+      <ul class="card-content">
+        <li class="card">
+          <div class="card-header red">
+            <span class="header-text"> 每日站立會議(Daily Scrum) </span>
+          </div>
+          <div class="card-body">
+            <p>每天都要進行的會議，以15分鐘為限制</p>
+            <p class="dot">昨天為團隊的短衝目標(Sprint Goal)做了那些進度</p>
+            <p class="dot">今天我會如何準備來幫助團隊達到短衝目標</p>
+            <p class="dot">過程中有遇到什麼問題、難題</p>
+            <p>透過團隊分享，追蹤大家的工作狀況。</p>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card-header yellow">
+            <span class="header-text"> 短衝檢視會議(Sprint Review) </span>
+          </div>
+          <div class="card-body text-center">
+            用來檢視該次短衝增量的成<br />
+            果，以蒐集相關的回饋數據<br />
+            或意見。
+          </div>
+        </li>
+        <li class="card">
+          <div class="card-header green">
+            <span class="header-text"> 短衝自省會議(Sprint Retrospective) </span>
+          </div>
+          <div class="card-body text-center">
+            <p>團隊在自省會議裡, 會共同回顧該短衝歷程發生的事情</p>
+            <p class="dot">好的地方</p>
+            <p class="dot">可以改進的地方</p>
+            <p class="dot">如何維持我們已有的成功經驗</p>
+            <p>優化工作流程、讓團隊有變得更好的機會。</p>
+          </div>
+        </li>
+      </ul>
+      <button class="btn btn-dark" onclick="nextStep('sixth', 'seventh')">我了解了</button>
     </section>
     <section class="seventh" id="seventh">
-        <ul>
-            <li class="chat">
-                <div class="left-avatar">
-                    <img src="./images/jason-avatar.png" alt="tina avatar" loading="lazy" />
-                    <span>Jason</span>
-                </div>
-                <p class="chat-message">
-                    那你來試試看，在這經典的Surum流程圖中，這些流程分別代表哪一個會議呢？
-                </p>
-            </li>
-            <li class="chat">
-                <p class="chat-message">
-                    <span class="highlight"> 提示：請用拖移的方式將標籤拖移至對應的方框裡 </span>
-                </p>
-            </li>
-        </ul>
-        <div class="container">
-            <img src="./images/sprint-bg.png" alt="sprint background" loading="lazy" />
+      <ul>
+        <li class="chat">
+          <div class="left-avatar">
+            <img src="./images/jason-avatar.png" alt="tina avatar" loading="lazy" />
+            <span>Jason</span>
+          </div>
+          <p class="chat-message">那你來試試看，在這經典的Surum流程圖中，這些流程分別代表哪一個會議呢？</p>
+        </li>
+        <li class="chat">
+          <p class="chat-message">
+            <span class="highlight"> 提示：請用拖移的方式將標籤拖移至對應的方框裡 </span>
+          </p>
+        </li>
+      </ul>
+      <div class="container">
+        <img src="./images/sprint-bg.png" alt="sprint background" loading="lazy" />
+      </div>
+      <div class="small-box red">
+        <span class="small-box-text"> 每日站立會議(Daily Scrum) </span>
+      </div>
+      <div class="seventh-drag-area">
+        <div class="small-box yellow seventh-box" data-color="yellow">
+          <span class="small-box-text"> 短衝檢視會議(Sprint Review) </span>
         </div>
-        <div class="small-box red">
-            <span class="small-box-text"> 每日站立會議(Daily Scrum) </span>
+        <div class="small-box green seventh-box" data-color="green">
+          <span class="small-box-text"> 短衝自省會議(Sprint Retrospective) </span>
         </div>
-        <div class="seventh-drag-area">
-            <div class="small-box yellow seventh-box" data-color="yellow">
-                <span class="small-box-text"> 短衝檢視會議(Sprint Review) </span>
-            </div>
-            <div class="small-box green seventh-box" data-color="green">
-                <span class="small-box-text"> 短衝自省會議(Sprint Retrospective) </span>
-            </div>
-        </div>
+      </div>
 
-        <div class="small-box-dash border-yellow seventh-drag-area" data-color-box="yellow-box"></div>
-        <div class="small-box-dash border-green seventh-drag-area" data-color-box="green-box"></div>
-        <button class="btn btn-dark" onclick="seventhSectionChecking()">
-            完成
-        </button>
+      <div class="small-box-dash border-yellow seventh-drag-area" data-color-box="yellow-box"></div>
+      <div class="small-box-dash border-green seventh-drag-area" data-color-box="green-box"></div>
+      <button class="btn btn-dark" onclick="seventhSectionChecking()">完成</button>
     </section>
     <section class="eighth" id="eighth">
-        <ul>
-            <li class="chat">
-                <div class="left-avatar">
-                    <img src="./images/allen-avatar.png" alt="tina avatar" loading="lazy" />
-                    <span>Allen</span>
-                </div>
-                <p class="chat-message">
-                    哇賽新來的，你真的很幸運，今天剛好是開發B組的
-                    Retro，你也見識一下，看看Retro都該做些什麼吧~我們會在會議裡請團隊成員提出哪些是做得好的地方、哪些可以繼續改善的地方？並記錄再Confluence中。
-                </p>
-            </li>
-            <li class="chat">
-                <p class="chat-message">
-                    請選擇適合 Retro的回饋卡！思考看看哪一張牌是『正面表述』呢？
-                </p>
-            </li>
-        </ul>
-        <div class="card-contnet">
-            <div class="card">
-                <div class="card-header"> 做得好的地方 </div>
-                <div class="card-body">
-                    <input class="card-status" type="radio" name="card01" id="card01-first" value="false">
-                    <label for="card01-first" class="poker-card">
-                        <div class="poker-card-value">
-                            <p>A</p>
-                            <img src="./images/peach.png" alt="peach icon" loading="lazy" />
-                        </div>
-                        <p class="poker-card-text"> 這次我幫了很多人救火耶 </p>
-                        <div class="poker-card-value rotate-180">
-                            <p>A</p>
-                            <img src="./images/peach.png" alt="peach icon" loading="lazy" />
-                        </div>
-                    </label>
-                    <input class="card-status" type="radio" name="card01" id="card01-second" value="true">
-                    <label for="card01-second" class="poker-card">
-                        <div class="poker-card-value">
-                            <p>A</p>
-                            <img src="./images/peach.png" alt="peach icon" loading="lazy" />
-                        </div>
-                        <p class="poker-card-text"> 大家在開發上都會互相 cover，讓任務都有準時在時間內完成。 </p>
-                        <div class="poker-card-value rotate-180">
-                            <p>A</p>
-                            <img src="./images/peach.png" alt="peach icon" loading="lazy" />
-                        </div>
-                    </label>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header"> 有哪些可以做得更好？ </div>
-                <div class="card-body">
-                    <input class="card-status" type="radio" name="card02" id="card02-first" value="true">
-                    <label for="card02-first" class="poker-card">
-                        <div class="poker-card-value">
-                            <p>A</p>
-                            <img src="./images/peach.png" alt="peach icon" loading="lazy" />
-                        </div>
-                        <p class="poker-card-text"> 可以記錄這次的開發時間，讓預估團隊點數可以更精準。 </p>
-                        <div class="poker-card-value rotate-180">
-                            <p>A</p>
-                            <img src="./images/peach.png" alt="peach icon" loading="lazy" />
-                        </div>
-                    </label>
-                    <input class="card-status" type="radio" name="card02" id="card02-second" value="false">
-                    <label for="card02-second" class="poker-card">
-                        <div class="poker-card-value">
-                            <p>A</p>
-                            <img src="./images/peach.png" alt="peach icon" loading="lazy" />
-                        </div>
-                        <p class="poker-card-text"> 開發時間預估不準確，請後端下次改進，避免Delay到我。 </p>
-                        <div class="poker-card-value rotate-180">
-                            <p>A</p>
-                            <img src="./images/peach.png" alt="peach icon" loading="lazy" />
-                        </div>
-                    </label>
-                </div>
-            </div>
+      <ul>
+        <li class="chat">
+          <div class="left-avatar">
+            <img src="./images/allen-avatar.png" alt="tina avatar" loading="lazy" />
+            <span>Allen</span>
+          </div>
+          <p class="chat-message">
+            哇賽新來的，你真的很幸運，今天剛好是開發B組的
+            Retro，你也見識一下，看看Retro都該做些什麼吧~我們會在會議裡請團隊成員提出哪些是做得好的地方、哪些可以繼續改善的地方？並記錄再Confluence中。
+          </p>
+        </li>
+        <li class="chat">
+          <p class="chat-message">請選擇適合 Retro的回饋卡！思考看看哪一張牌是『正面表述』呢？</p>
+        </li>
+      </ul>
+      <div class="card-contnet">
+        <div class="card">
+          <div class="card-header">做得好的地方</div>
+          <div class="card-body">
+            <input class="card-status" type="radio" name="card01" id="card01-first" value="false" />
+            <label for="card01-first" class="poker-card">
+              <div class="poker-card-value">
+                <p>A</p>
+                <img src="./images/peach.png" alt="peach icon" loading="lazy" />
+              </div>
+              <p class="poker-card-text">這次我幫了很多人救火耶</p>
+              <div class="poker-card-value rotate-180">
+                <p>A</p>
+                <img src="./images/peach.png" alt="peach icon" loading="lazy" />
+              </div>
+            </label>
+            <input class="card-status" type="radio" name="card01" id="card01-second" value="true" />
+            <label for="card01-second" class="poker-card">
+              <div class="poker-card-value">
+                <p>A</p>
+                <img src="./images/peach.png" alt="peach icon" loading="lazy" />
+              </div>
+              <p class="poker-card-text">大家在開發上都會互相 cover，讓任務都有準時在時間內完成。</p>
+              <div class="poker-card-value rotate-180">
+                <p>A</p>
+                <img src="./images/peach.png" alt="peach icon" loading="lazy" />
+              </div>
+            </label>
+          </div>
         </div>
-        <button class="btn btn-dark" onclick="selectedChecking('card01', 'card02')">
-            我想我了解了
-        </button>
+
+        <div class="card">
+          <div class="card-header">有哪些可以做得更好？</div>
+          <div class="card-body">
+            <input class="card-status" type="radio" name="card02" id="card02-first" value="true" />
+            <label for="card02-first" class="poker-card">
+              <div class="poker-card-value">
+                <p>A</p>
+                <img src="./images/peach.png" alt="peach icon" loading="lazy" />
+              </div>
+              <p class="poker-card-text">可以記錄這次的開發時間，讓預估團隊點數可以更精準。</p>
+              <div class="poker-card-value rotate-180">
+                <p>A</p>
+                <img src="./images/peach.png" alt="peach icon" loading="lazy" />
+              </div>
+            </label>
+            <input class="card-status" type="radio" name="card02" id="card02-second" value="false" />
+            <label for="card02-second" class="poker-card">
+              <div class="poker-card-value">
+                <p>A</p>
+                <img src="./images/peach.png" alt="peach icon" loading="lazy" />
+              </div>
+              <p class="poker-card-text">開發時間預估不準確，請後端下次改進，避免Delay到我。</p>
+              <div class="poker-card-value rotate-180">
+                <p>A</p>
+                <img src="./images/peach.png" alt="peach icon" loading="lazy" />
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-dark" onclick="selectedChecking('card01', 'card02')">我想我了解了</button>
     </section>
     <section class="ninth" id="ninth">
-        <div class="logo">
-            <img src="./images/week3-logo.svg" alt="logo" title="logo" loading="lazy" />
-        </div>
-        <h2>
-            <p>恭喜通過 Scrum新手村！</p>
-            <p>正式加入六角資訊的開發 A 組。</p>
-        </h2>
-        <div class="red-yellow-coin">
-            <img src="./images/red-yellow-alot.png" alt="red yellow coin" loading="lazy" />
-        </div>
-        <div class="gold-coin-1">
-            <img src="./images/gold-coin-01.svg" alt="gold coin" loading="lazy" />
-        </div>
-        <div class="gold-coin-2">
-            <img src="./images/gold-coin-02.svg" alt="gold coin" loading="lazy" />
-        </div>
-        <div class="gold-coin-3">
-            <img src="./images/gold-coin-03.svg" alt="gold coin" loading="lazy" />
-        </div>
-        <div class="gold-coin-4">
-            <img src="./images/gold-coin-04.svg" alt="gold coin" loading="lazy" />
-        </div>
-        <div class="gold-coin-5">
-            <img src="./images/gold-coin-05.svg" alt="gold coin" loading="lazy" />
-        </div>
-        <div class="poker-card-1">
-            <img src="./images/poker-card-1.svg" alt="poker card" loading="lazy" />
-        </div>
-        <div class="poker-card-2">
-            <img src="./images/poker-card-3.svg" alt="poker card" loading="lazy" />
-        </div>
-        <footer>
-            <img class="jira" src="./images/atlassian-jira-logo.png" alt=" atlassian jira logo" loading="lazy" />
-            <img class="confluence" src="./images/confluence-logo.png" alt="confluence logo" loading="lazy" />
-        </footer>
+      <div class="logo">
+        <img src="./images/week3-logo.svg" alt="logo" title="logo" loading="lazy" />
+      </div>
+      <h2>
+        <p>恭喜通過 Scrum新手村！</p>
+        <p>正式加入六角資訊的開發 A 組。</p>
+      </h2>
+      <div class="red-yellow-coin">
+        <img src="./images/red-yellow-alot.png" alt="red yellow coin" loading="lazy" />
+      </div>
+      <div class="gold-coin-1">
+        <img src="./images/gold-coin-01.svg" alt="gold coin" loading="lazy" />
+      </div>
+      <div class="gold-coin-2">
+        <img src="./images/gold-coin-02.svg" alt="gold coin" loading="lazy" />
+      </div>
+      <div class="gold-coin-3">
+        <img src="./images/gold-coin-03.svg" alt="gold coin" loading="lazy" />
+      </div>
+      <div class="gold-coin-4">
+        <img src="./images/gold-coin-04.svg" alt="gold coin" loading="lazy" />
+      </div>
+      <div class="gold-coin-5">
+        <img src="./images/gold-coin-05.svg" alt="gold coin" loading="lazy" />
+      </div>
+      <div class="poker-card-1">
+        <img src="./images/poker-card-1.svg" alt="poker card" loading="lazy" />
+      </div>
+      <div class="poker-card-2">
+        <img src="./images/poker-card-3.svg" alt="poker card" loading="lazy" />
+      </div>
+      <footer>
+        <img class="jira" src="./images/atlassian-jira-logo.png" alt=" atlassian jira logo" loading="lazy" />
+        <img class="confluence" src="./images/confluence-logo.png" alt="confluence logo" loading="lazy" />
+      </footer>
     </section>
 
     <section class="toast-container" id="toast">
-        <div class="toast-msg">
-            <p>哦歐！排序錯誤，請再調整順序123</p>
-            <button class="btn-red" onclick="closeToast('toast')">確定</button>
-        </div>
+      <div class="toast-msg">
+        <p>哦歐！排序錯誤，請再調整順序123</p>
+        <button class="btn-red" onclick="closeToast('toast')">確定</button>
+      </div>
     </section>
 
     <script src="https://eugene-fcm.vercel.app/javascript/vistor.min.js"></script>
@@ -462,6 +436,5 @@
     <script src="./js/jquery-ui.1.12.1.min.js"></script>
     <script src="./js/all.js"></script>
     <script src="./js/script.js"></script>
-</body>
-
+  </body>
 </html>
