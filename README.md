@@ -6,7 +6,7 @@ The F2E 4th Scrum 新手村
 ![alt cover](https://github.com/CharlesSin/2022-THE-F2E-WeekThree/blob/master/images/cover.jpg)
 ## Demo
 
-[Demo](https://2022-the-f2e-3.netlify.app)
+[Demo](https://2022-the-f2e-week3.netlify.app/)
 
 ## Introduction
 
